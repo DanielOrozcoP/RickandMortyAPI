@@ -1,4 +1,5 @@
 import {CardListItem} from "./CardListItem.jsx";
+import PropTypes from 'prop-types'
 
 export const CardList = ({cards, setModalCard}) => {
     return (
@@ -17,4 +18,8 @@ export const CardList = ({cards, setModalCard}) => {
             }
         </>
     )
+}
+CardList.propTypes = {
+    cards: PropTypes.arrayOf(PropTypes.object).isRequired,
+    setModalCard: PropTypes.func.isRequired
 }

@@ -1,4 +1,5 @@
 import {ModalBody} from "./ModalBody.jsx";
+import PropTypes from "prop-types";
 
 export const ModalRaM = ({modalCard}) => {
     return (
@@ -21,4 +22,7 @@ export const ModalRaM = ({modalCard}) => {
             </div>
         </div>
     )
+}
+ModalRaM.propTypes = {
+    modalCard: PropTypes.string.isRequired
 }
