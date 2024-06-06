@@ -24,5 +24,8 @@ export const ModalRaM = ({modalCard}) => {
     )
 }
 ModalRaM.propTypes = {
-    modalCard: PropTypes.string.isRequired
+    modalCard: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.object
+    ]).isRequired
 }
